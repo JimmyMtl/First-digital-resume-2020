@@ -1,63 +1,62 @@
-body
-{
-    margin:0;
-    background-color: #dae0e6;
+@font-face {
+    /* Permet de donner le nom à cette police */
+    font-family: vagrounded;
+    /* Permet de donner la source de cette police */
+    src: url(./fonts/vagrounded.ttf);
+}
+
+/* Intégration de la police Satisfy*/
+@font-face {
+    /* Permet de donner le nom à cette police */
+    font-family: coders;
+    /* Permet de donner la source de cette police */
+    src: url(./fonts/coders.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #dae0e6 !important;
     font-family: BentonSans, sans-serif;
-    color:black;
+    color: black;
 }
-.navbar
-{
-    margin:0;
-    padding:0;
-    width: 100%;
-    height: 50px;
 
-    overflow: hidden;
-
-    background-color: white;
-
+.row {
+    background-color: #dae0e6;
 }
-nav ul
-{
-    list-style-type: none;
-    display: block;
 
-}
-nav li
-{
-    float:left;
-}
-#name
-{
-    font-size: 20px;
+#moi {
 
-    margin-top: -2px;
-    margin-left: 10px;
-}
-.img
-{
-    background: url("medias/moi.png");
-    
-    
     /* no-repeat permet de ne pas remplir la place libre
      d'image*/
-     margin-top: -10px;
     background-size: 100%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
-#contact
-{
+
+.moirond {
+    background: url('./img/moi.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    height: 250px;
+}
+
+#contact {
     float: right;
 }
-#contact-button
-{
+
+#contact-button {
     width: 90px;
-     margin-top: -10px;
-     height: 35px !important;
+    margin-top: -10px;
+    height: 35px !important;
     display: block;
 
-    
+
     box-sizing: border-box;
 
     background-color: #0079d3;
@@ -67,5 +66,148 @@ nav li
     padding: 10px;
     text-align: center;
     font-size: 15px;
-    font-weight:bold ;
+    font-weight: bold;
+}
+
+
+.img-size-background {
+    margin: 5px !important;
+    width: 23% !important;
+    height: 150px;
+    background-size: 110% !important;
+    background-repeat: no-repeat;
+    background-position: 0% !important;
+}
+
+#firstimg {
+
+    background:
+        linear-gradient(transparent, black), url("./img/coding.png");
+
+}
+
+#secondimg {
+
+    background:
+        linear-gradient(transparent, black), url("./img/sports.jpg");
+
+}
+
+#thirdimg {
+
+    background:
+        linear-gradient(transparent, black), url("./img/nourriture.jpg");
+
+}
+
+#fourthimg {
+
+
+    background:
+        linear-gradient(transparent, black), url("./img/repairing.jpg");
+
+}
+
+
+.mainHeadtext {
+    position: relative;
+    left: 5%;
+    top: 30%;
+    color: white;
+    bottom: 0px;
+}
+
+.coders-font {
+    font-family: coders !important;
+    color: #212121 !important;
+}
+
+.vagrounded-font {
+    font-family: vagrounded;
+    color: black;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.skills {
+    background: url("./img/skills.jpg");
+    margin-left: -10px;
+    border-radius: 10px;
+    width: 110% !important;
+    height: 80px;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .img-size-background {
+        margin: 5px !important;
+        width: 100% !important;
+        height: 150px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #mainSection {
+        width: 100%;
+
+    }
+
+    #rightSection {
+        margin-top: 20px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1260px) {
+
+    .img-size-background {
+        margin: 5px !important;
+        width: 45% !important;
+        height: 150px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0%;
+    }
+
+    #mainSection {
+        width: 65%;
+
+    }
+
+    #rightSection {
+        margin-left: 20px;
+        width: 30%;
+
+    }
+}
+
+@media screen and (min-width:1260px) {
+
+
+    #mainHead {
+        justify-content: space-between !important;
+    }
+
+    #mainSection {
+        width: 70%;
+
+    }
+
+    #rightSection {
+        margin-left: 30px;
+        width: 25%;
+
+    }
+
 }
