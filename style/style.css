@@ -220,6 +220,7 @@ a {
 @media screen and (max-width:499px) {
     #headerMoi
     {
+        margin-left: -200px !important;
         margin-top:-32px ;
     }
     #moiCentral,
