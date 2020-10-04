@@ -91,7 +91,7 @@ body {
 #firstimg {
 
     background:
-        linear-gradient(transparent, black), url("./img/coding.png");
+        linear-gradient(transparent, black), url("./img/coding.jpg");
 
 }
 
@@ -220,7 +220,6 @@ a {
 @media screen and (max-width:499px) {
     #headerMoi
     {
-        margin-left: -200px !important;
         margin-top:-32px ;
     }
     #moiCentral,
@@ -273,7 +272,8 @@ a {
 
     #headerMoi
     {
-        margin-top:-30px ;
+        margin-top:-25px ;
+        font-size: 24px;
     }
     #imgmoiCentral,
     #imgepitechCentral,
