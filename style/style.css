@@ -151,8 +151,8 @@ body {
     border-radius: 5px !important;
     height: 35px !important;
 }
-.redditBtn2
-{
+
+.redditBtn2 {
     display: block;
     text-align: center;
     background-color: white !important;
@@ -185,29 +185,32 @@ button {
 }
 
 /* Progress bar */
-progress {
-    border: 0;
-    height: 10px;
-    border-radius: 10px;
+
+.conteneur_progess_bar {
+    width: 200px;
+    height: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    display: inline-block;
 }
 
-progress::-webkit-progress-bar {
-    border: 0;
-    height: 10px;
-    border-radius: 10px;
+.progress_bar1,
+.progress_bar2,
+.progress_bar3 {
+    background-color: #cb2025;
+    width: 1%;
+    height: 11px;
+    border: 2px solid #f7f7f7;
+
 }
 
-progress::-webkit-progress-value {
-    border: 0;
-    height: 10px;
-    border-radius: 10px;
+.pourcent {
+    color: #cb2025;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
-progress::-moz-progress-bar {
-    border: 0;
-    height: 10px;
-    border-radius: 10px;
-}
 
 a {
     color: black !important;
@@ -215,14 +218,17 @@ a {
 
 
 @media screen and (max-width:499px) {
+    #headerMoi
+    {
+        margin-top:-32px ;
+    }
+    #moiCentral,
+    #mtlkCentral,
+    #epitechCentral {
 
-    #moiCentral {
         margin-top: 50px;
     }
-    #mtlkCentral{
 
-        margin-top: 70px;
-    }
     .img-size-background {
         margin: 5px !important;
         width: 100% !important;
@@ -242,43 +248,48 @@ a {
         width: 100%;
 
     }
-    #headerMoi
-    {
+
+    #headerMoi {
         margin-top: -15px !important;
         font-size: 15px;
     }
-    #moi
-    {
+
+    #moi {
         width: 40px;
         height: 40px;
     }
-    #imgmoiCentral
-    {
-        margin-top: 50px;
-        width: 150px !important;
-        height: 150px !important;
-    }
-    #imgmtlkCentral
-    {
+
+    #imgmoiCentral,
+    #imgepitechCentral,
+    #imgmtlkCentral {
         margin-top: 50px;
         width: 150px !important;
         height: 150px !important;
     }
 }
+
 @media screen and (min-width:500px) and (max-width:768px) {
-    #imgmoiCentral
+
+    #headerMoi
     {
-        margin-top: 50px;
+        margin-top:-30px ;
+    }
+    #imgmoiCentral,
+    #imgepitechCentral,
+    #imgmtlkCentral {
+        margin-top: 0px;
+        margin-left: 80px;
         width: 150px !important;
         height: 150px !important;
     }
-    #moiCentral {
-        margin-top: 0px;
-    }
-    #mtlkCentral{
+
+    #moiCentral,
+    #mtlkCentral,
+    #epitechCentral {
 
         margin-top: 70px;
     }
+
     .img-size-background {
         margin: 5px !important;
         width: 100% !important;
@@ -302,18 +313,29 @@ a {
 
 @media screen and (min-width:769px) and (max-width:1260px) {
 
-    #imgmoiCentral
+    #headerMoi
     {
-        margin-top: 50px;
-        width: 150px !important;
-        height: 150px !important;
+        margin-top:-30px ;
     }
-    #moiCentral {
+    #imgmoiCentral,
+    #imgepitechCentral,
+    #imgmtlkCentral {
+        margin-top: 10px;
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+
+
+
+    #moiCentral,
+    #mtlkCentral,
+    #epitechCentral {
         margin-top: 75px;
     }
-    #mtlkCentral{
-        margin-top: 75px;
-    }
+
+
+
     .img-size-background {
         margin: 5px !important;
         width: 45% !important;
@@ -337,13 +359,19 @@ a {
 
 @media screen and (min-width:1260px) {
 
-
-    #imgmoiCentral
+    #headerMoi
     {
-        margin-top: 40px;
+        margin-top:-32px ;
+    }
+    #imgmoiCentral,
+    #imgmtlkCentral,
+    #imgepitechCentral {
+        margin-bottom: 40px;
+        margin-top: 20px;
         width: 250px !important;
         height: 250px !important;
     }
+
     #mainHead {
         justify-content: space-between !important;
     }
@@ -359,13 +387,13 @@ a {
 
     }
 
-    #moiCentral {
-        margin-left: 100px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    } 
-    #mtlkCentral {
+    #moiCentral,
+    #mtlkCentral,
+    #epitechCentral {
         padding-left: 60px;
         margin-top: 50px;
     }
+
+
+
 }

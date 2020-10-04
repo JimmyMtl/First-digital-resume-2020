@@ -1,16 +1,12 @@
 $(function () {
     
-    $('.sidenav').sidenav();
-    $('a').sidenav({
-      closeOnClick: true
-        
-    });
+    
     /* Animation btn trigger */
     var tmpAnimation1 = 0;
     var tmpAnimation2 = 0;
     var tmpAnimation3 = 0;
 
-    
+
     /* Btn groupe 1 */
     $('#btnTurn1').on('click', () => {
 
