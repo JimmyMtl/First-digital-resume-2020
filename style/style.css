@@ -13,6 +13,11 @@
     src: url(./fonts/coders.ttf);
 }
 
+html,
+body {
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,12 +43,16 @@ body {
 }
 
 .moirond {
-    background: url('./img/moi.png');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    height: 200px;
+}
 
-    height: 250px;
+.test {
+    height: 100%;
+}
+
+.mtlk {
+
+    height: 200px;
 }
 
 #contact {
@@ -131,8 +140,41 @@ body {
     justify-content: space-between;
 }
 
+.redditBtn {
+    display: block;
+    text-align: center;
+    background-color: #0079d3 !important;
+    color: white !important;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: -10px !important;
+    border-radius: 5px !important;
+    height: 35px !important;
+}
+.redditBtn2
+{
+    display: block;
+    text-align: center;
+    background-color: white !important;
+    color: #0079d3 !important;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: -10px !important;
+    border-radius: 5px !important;
+    border: 1px #0079d3 solid !important;
+    height: 35px !important;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+button {
+    position: absolute;
+}
+
 .skills {
-    background: url("./img/skills.jpg");
+    background: url("./img/skills2.jpg");
     margin-left: -10px;
     border-radius: 10px;
     width: 110% !important;
@@ -142,12 +184,101 @@ body {
     background-position: center !important;
 }
 
+/* Progress bar */
+progress {
+    border: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    border: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    border: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+a {
+    color: black !important;
+}
 
 
+@media screen and (max-width:499px) {
 
+    #moiCentral {
+        margin-top: 50px;
+    }
+    #mtlkCentral{
 
-@media screen and (max-width:768px) {
+        margin-top: 70px;
+    }
+    .img-size-background {
+        margin: 5px !important;
+        width: 100% !important;
+        height: 150px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
+    #mainSection {
+        width: 100%;
+
+    }
+
+    #rightSection {
+        margin-top: 20px;
+        width: 100%;
+
+    }
+    #headerMoi
+    {
+        margin-top: -15px !important;
+        font-size: 15px;
+    }
+    #moi
+    {
+        width: 40px;
+        height: 40px;
+    }
+    #imgmoiCentral
+    {
+        margin-top: 50px;
+        width: 150px !important;
+        height: 150px !important;
+    }
+    #imgmtlkCentral
+    {
+        margin-top: 50px;
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+@media screen and (min-width:500px) and (max-width:768px) {
+    #imgmoiCentral
+    {
+        margin-top: 50px;
+        width: 150px !important;
+        height: 150px !important;
+    }
+    #moiCentral {
+        margin-top: 0px;
+    }
+    #mtlkCentral{
+
+        margin-top: 70px;
+    }
     .img-size-background {
         margin: 5px !important;
         width: 100% !important;
@@ -171,6 +302,18 @@ body {
 
 @media screen and (min-width:769px) and (max-width:1260px) {
 
+    #imgmoiCentral
+    {
+        margin-top: 50px;
+        width: 150px !important;
+        height: 150px !important;
+    }
+    #moiCentral {
+        margin-top: 75px;
+    }
+    #mtlkCentral{
+        margin-top: 75px;
+    }
     .img-size-background {
         margin: 5px !important;
         width: 45% !important;
@@ -195,6 +338,12 @@ body {
 @media screen and (min-width:1260px) {
 
 
+    #imgmoiCentral
+    {
+        margin-top: 40px;
+        width: 250px !important;
+        height: 250px !important;
+    }
     #mainHead {
         justify-content: space-between !important;
     }
@@ -210,4 +359,13 @@ body {
 
     }
 
+    #moiCentral {
+        margin-left: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    #mtlkCentral {
+        padding-left: 60px;
+        margin-top: 50px;
+    }
 }
